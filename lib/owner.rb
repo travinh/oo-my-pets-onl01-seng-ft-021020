@@ -28,9 +28,10 @@ class Owner
   end
   
   def cats 
-    Cat.all.each do |cat|
-      puts cat.name
+    cats Cat.all.each do |cat|
+      cat.owner.name == self.name 
     end
+    cats
   end
   
   
