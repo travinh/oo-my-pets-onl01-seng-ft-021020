@@ -69,7 +69,7 @@ class Owner
       cat.mood = "nervous"
       cat.owner = nil
     end
-    cats = self.cats 
+    dogs = self.dogs 
     dogs.map do |dog|
       dog.mood = "nervous"
       dog.owner = nil
@@ -80,7 +80,8 @@ class Owner
   
   def list_pets
     cats = self.cats
-    
+    dogs = self.dogs
+    puts "I have #{cats.count} dog(s), and #{dogs.count} cat(s)."
   end
   
 end
