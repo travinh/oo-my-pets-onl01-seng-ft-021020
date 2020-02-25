@@ -28,7 +28,7 @@ class Owner
   end
   
   def cats 
-    Cat.all.collect do |cat|
+    Cat.all.each do |cat|
       puts cat
     end
   end
