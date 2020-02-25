@@ -29,7 +29,7 @@ class Owner
   
   def cats 
     Cat.all.each do |cat|
-      puts cat
+      puts cat.name
     end
   end
   
