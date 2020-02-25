@@ -69,12 +69,17 @@ class Owner
       cat.mood = "nervous"
       cat.owner = nil
     end
-    dogs = self.dogs 
+    cats = self.cats 
     dogs.map do |dog|
       dog.mood = "nervous"
       dog.owner = nil
     end
     
+    
+  end
+  
+  def list_pets
+    cats = self.cats
     
   end
   
