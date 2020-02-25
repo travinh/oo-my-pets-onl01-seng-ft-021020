@@ -67,12 +67,12 @@ class Owner
     cats = self.cats
     cats.map do |cat|
       cat.mood = "nervous"
-      cat.owner.delete
+      cat.owner = nil
     end
     dogs = self.dogs 
     dogs.map do |dog|
       dog.mood = "nervous"
-      dog.owner.delete
+      dog.owner = nil
     end
     
     
