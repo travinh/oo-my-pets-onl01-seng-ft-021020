@@ -56,4 +56,26 @@ class Owner
     end
   end
   
+  def feed_cats
+    cats = self.cats 
+    cats.map do |cat|
+      cat.mood = "happy"
+    end
+  end
+  
+  def sell_pets
+    cats = self.cats
+    cats.map do |cat|
+      cat.mood = "nervous"
+      cat.owner.delete
+    end
+    dogs = self.dogs 
+    dogs.map do |dog|
+      dog.mood = "nervous"
+      dog.owner.delete
+    end
+    
+    
+  end
+  
 end
