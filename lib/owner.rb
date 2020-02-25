@@ -28,7 +28,7 @@ class Owner
   end
   
   def cats 
-    cats Cat.all.each do |cat|
+    cats = Cat.all.each do |cat|
       cat.owner.name == self.name 
     end
     cats
